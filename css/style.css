@@ -44,8 +44,9 @@ footer ul li strong {font-weight: 600;}
 
 ul.grid { text-align: center; width: 100%; }
 ul.grid li { -webkit-transform: translate3d(0, 0, 0); background-color: #fff; -webkit-box-shadow: 0 1px 1px 0 #c6ccd2; box-shadow: 0 1px 1px 0 #c6ccd2; display: inline-block; margin: 0 30px 30px 0; max-width: 300px; width: 30.0%; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
-ul.grid li:nth-child(3) { margin-right: 0; }
+ul.grid li:nth-child(3n+3) { margin-right: 0; }
 ul.grid li:last-child { margin-right: 0; }
+
 @media screen and (max-width: 960px) { ul.grid li { max-width: 100%; width: 46.66667%; }
   ul.grid li:nth-child(3n+3) { margin-right: 30px; }
   ul.grid li:nth-child(2n+2) { margin-right: 0; } }
@@ -53,16 +54,18 @@ ul.grid li:last-child { margin-right: 0; }
   ul.grid li:nth-child(3n+3), ul.grid li:nth-child(2n+2) { margin-right: 0; } }
 
 ul.grid li a { display: inline-block;}
-ul.grid li .img .photo { cursor: pointer; overflow: hidden; position: relative; }
-ul.grid li .img .photo img { -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; height: auto; max-width: 100%; vertical-align: bottom; overflow: hidden; }
-ul.grid li .img .photo .overlay { background-color: #26a9e7; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; bottom: 0; color: #fff; height: auto; left: 0; opacity: 0; position: absolute; right: 0; top: 0; width: 100%; z-index: 99; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
-ul.grid li .img .photo .overlay a { color: #fff; padding: 0; bottom: 0; height: auto; left: 0; position: absolute; right: 0; top: 0; width: 100%;}
-ul.grid li .img .photo .overlay.mobile { background: #26a9e7 url(../images/mobile.svg) no-repeat center center; background-size: auto 25%;}
-ul.grid li .img .photo .overlay.desktop { background: #26a9e7 url(../images/desktop.svg) no-repeat center center; background-size: auto 25%;}
-ul.grid li .img .photo .overlay.mobtop { background: #26a9e7 url(../images/mobtop.svg) no-repeat center center; background-size: auto 25%;}
-ul.grid li:hover .img .photo .overlay { opacity: 1; }
+ul.grid li .img .img-wrap { cursor: pointer; overflow: hidden; position: relative; }
+ul.grid li .img .img-wrap img { -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; height: auto; max-width: 100%; vertical-align: bottom; overflow: hidden; }
+ul.grid li .img .img-wrap .overlay { background-color: #26a9e7; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; bottom: 0; color: #fff; height: auto; left: 0; opacity: 0; position: absolute; right: 0; top: 0; width: 100%; z-index: 99; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+ul.grid li .img .img-wrap .overlay a { color: #fff; padding: 0; bottom: 0; height: auto; left: 0; position: absolute; right: 0; top: 0; width: 100%;}
+ul.grid li .img .img-wrap .overlay.mobile { background: #26a9e7 url(../images/mobile.svg) no-repeat center center; background-size: auto 25%;}
+ul.grid li .img .img-wrap .overlay.desktop { background: #26a9e7 url(../images/desktop.svg) no-repeat center center; background-size: auto 25%;}
+ul.grid li .img .img-wrap .overlay.mobtop { background: #26a9e7 url(../images/mobtop.svg) no-repeat center center; background-size: auto 25%;}
+ul.grid li:hover .img .img-wrap .overlay { opacity: 1; }
 ul.grid li .info { text-align: left; }
 ul.grid li .info h1 a { font-size: 1em; font-weight: 600; line-height: 1.2; padding: 15px 20px 13px; display: block; }
+ul.grid li .info h1 a:after {content: "\203A"; position: absolute; right: 20px; font-size:1.2em; line-height:.9em; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
+ul.grid li:hover .info h1 a:after {right: 17px;}
 
 
 /* -------- Mobile -------- */
