@@ -29,7 +29,7 @@ header #header-wrap #logo {text-transform: uppercase;}
 header #header-wrap #logo h1 a {font-size: 3em; font-weight: 700; color: #59666c;}
 header #header-wrap #logo h2 {font-size: .8em; font-weight: 700; padding:3px; color: #d1d9dd; letter-spacing: .2em;}
 header #header-wrap #nav { text-align: right;}
-header #header-wrap #nav ul li { display: inline-block; margin-left:50px;}
+header #header-wrap #nav ul li { display: inline-block; margin-left:50px; font-size: 1em;}
 header #header-wrap #logo, header #header-wrap #nav { width:49%; vertical-align: middle; display: inline-block;}
 
 #grid-container { margin: 0 auto; max-width: 960px; padding: 80px 30px; clear: both; }
@@ -71,8 +71,10 @@ ul.grid li .info h1 a { font-size: 1em; font-weight: 600; line-height: 1.2; padd
 	header #header-wrap { padding: 30px;}
 	header #header-wrap #logo, header #header-wrap #nav { width:100%; text-align: center;}
 	header #header-wrap #nav ul li { margin: 0; padding: 20px 0 0;}
-	header #header-wrap #nav ul li a { padding: 20px;}
+	header #header-wrap #nav ul li a { padding: 20px; font-size: 1.2em;}
 
 	#grid-container { padding: 30px; }
+
+	footer ul li { font-size: 1.1em;}
 
 }
