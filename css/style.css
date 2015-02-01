@@ -109,6 +109,7 @@ section .section-wrap h2 { font-size: 2em; margin-bottom: 40px; font-weight: 300
 section .section-wrap h3 { font-size: 1.4em; margin-bottom: 20px; font-weight: 400; line-height: 140%}
 section .section-wrap p {max-width: 650px; margin:0 auto 20px; font-weight: 400; font-size: 1.1em; line-height: 170%;}
 section .section-wrap p:last-child {margin-bottom: 0;}
+section .section-wrap p strong.circle { width:50px; height: 50px; padding: 5px; display: block; margin: 0 auto 20px; vertical-align: middle; -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; border: 3px solid #eee; color:#ccc; line-height: 1.7; }
 
 /* - Down Arrow - */
 
@@ -151,6 +152,8 @@ section .section-wrap p:last-child {margin-bottom: 0;}
 	section .section-wrap.continue {padding: 0px 40px 40px;}
 	section .section-wrap.center { text-align: left;}
 	section .section-wrap span.left { max-width: 100%;}
+	section .section-wrap p.indent { position: relative; padding-left:70px;}
+	section .section-wrap p strong.circle { position: absolute; text-align: center; left: 0;}
 
 }
 
