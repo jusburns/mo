@@ -149,6 +149,7 @@ section .section-wrap p:last-child {margin-bottom: 0;}
 
 	section .section-wrap {padding: 80px 40px;}
 	section .section-wrap.continue {padding: 0px 40px 40px;}
+	section .section-wrap.center { text-align: left;}
 	section .section-wrap span.left { max-width: 100%;}
 
 }
