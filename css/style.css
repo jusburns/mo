@@ -67,6 +67,33 @@ ul.grid li .info h1 a { font-size: 1em; font-weight: 600; line-height: 1.2; padd
 ul.grid li .info h1 a:after {content: "\203A"; position: absolute; right: 20px; font-size:1.2em; line-height:.9em; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
 ul.grid li:hover .info h1 a:after {right: 17px;}
 
+/* -------- Work Pages -------- */
+.head { color: #fff;}
+.hummus { background-color: #dda93e; }
+.sesh { background-color: #455466 }
+.tesla { background-color: #e21f3b; }
+.pitt { background-color: #f99637; }
+.hoob { background-color: #6895a8; }
+.compass { background-color: #2ecc71; }
+.sesh .head-wrap { position: relative; }
+.sesh .head-wrap .details:after {content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent url(../images/icon_sesh.png) no-repeat right center;
+    background-size: auto 40%;
+    width: 95%;
+    height: 100%;
+    opacity : 1;}
+.head .head-wrap { margin:0 auto; max-width: 960px; padding: 130px 40px;}
+.head .head-wrap .details { width: 50%; }
+.head .head-wrap .details h1 { font-weight: 300; font-size: 4em; margin-bottom: 25px; padding-bottom: 25px; border-bottom: 8px solid rgba(0,0,0,.1); display: inline-block;}
+.head .head-wrap .details p { font-weight: 400; font-size: 1em; line-height: 160%;}
+.head .head-wrap .details aside { margin-top: 15px; }
+.head .head-wrap .details aside span { opacity: .5;}
+.head .head-wrap .details aside p { font-weight: 600; font-size: .8em; line-height: 150%; opacity: .6;}
+
 
 /* -------- Mobile -------- */
 
@@ -79,5 +106,12 @@ ul.grid li:hover .info h1 a:after {right: 17px;}
 	#grid-container { padding: 30px; }
 
 	footer ul li { font-size: 1em;}
+
+/* -------- Mobile Work Pages-------- */
+	.head .head-wrap { padding: 50px 40px;}
+	.head .head-wrap .details { width: 100%; }
+
+	.sesh .head-wrap .details:after {opacity:.05; background-position: center center; background-size: auto 100%; width: 100%; -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);}
+
 
 }
