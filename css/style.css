@@ -108,7 +108,7 @@ ul.grid li:hover .info h1 a:after {right: 17px;}
 	footer ul li { font-size: 1em;}
 
 /* -------- Mobile Work Pages-------- */
-	.head .head-wrap { padding: 50px 40px;}
+	.head .head-wrap { padding: 80px 40px;}
 	.head .head-wrap .details { width: 100%; }
 
 	.sesh .head-wrap .details:after {opacity:.05; background-position: center center; background-size: auto 100%; width: 100%; -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);}
