@@ -1,4 +1,5 @@
-/* -------- Reset -------- */
+/* ------------------------ RESET ------------------------ */
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { border: 0; font-size: 100%; font: inherit; vertical-align: baseline; margin: 0; padding: 0; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -17,11 +18,13 @@ a { text-decoration: none; }
 
 * { box-sizing: border-box; }
 
-/* -------- Global -------- */
+/* ------------------------ GLOBAL ------------------------ */
 
-body { background-color: #f9f9f9; color: #52585f; font-family: 'Open Sans', sans-serif; padding: 0; }
+body { background-color: #f9f9f9; color: #858d97; font-family: 'Open Sans', sans-serif; padding: 0; }
+h1, h2, h3 {color: #52585f; }
 a { color:#96abb5; }
 a:hover { color:#26a9e7;}
+strong {font-weight: 600;}
 
 header { background-color: #fff; border-top: 5px solid #96abb5; width: 100%; }
 header #header-wrap { margin:0 auto; max-width: 960px; padding: 40px; overflow: hidden;}
@@ -32,15 +35,13 @@ header #header-wrap #nav { text-align: right;}
 header #header-wrap #nav ul li { display: inline-block; margin-left:50px; font-size: 1em;}
 header #header-wrap #logo, header #header-wrap #nav { width:49%; vertical-align: middle; display: inline-block;}
 
-#grid-container { margin: 0 auto; max-width: 960px; padding: 80px 30px; clear: both; }
+#grid-container { margin: 0 auto; max-width: 960px; padding: 80px 30px 0px; clear: both; }
 
-footer { margin:0 auto; max-width: 960px; padding: 0 40px 40px; overflow: hidden;}
+footer { margin:0 auto; max-width: 960px; padding: 40px; overflow: hidden;}
 footer ul li { display: inline-block; margin-right:20px; font-size:.8em; color:#d4d3d3; line-height: 24px;}
 footer ul li:last-child {clear: both; display: block;}
-footer ul li strong {font-weight: 600;}
 
-
-/* -------- Homepage -------- */
+/* ------------------------ HOMEPAGE ------------------------ */
 
 ul.grid { text-align: center; width: 100%; }
 ul.grid li { -webkit-transform: translate3d(0, 0, 0); background-color: #fff; -webkit-box-shadow: 0 1px 1px 0 #c6ccd2; box-shadow: 0 1px 1px 0 #c6ccd2; display: inline-block; margin: 0 30px 30px 0; max-width: 300px; width: 30.0%; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
@@ -67,59 +68,87 @@ ul.grid li .info h1 a { font-size: 1em; font-weight: 600; line-height: 1.2; padd
 ul.grid li .info h1 a:after {content: "\203A"; position: absolute; right: 20px; font-size:1.2em; line-height:.9em; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
 ul.grid li:hover .info h1 a:after {right: 17px;}
 
-/* -------- Work Pages -------- */
+/* ------------------------ WORK PAGES ------------------------ */
+
 .head { color: #fff;}
+.head .head-wrap { position: relative; }
+
+/* + + + + + When adding another project page, copy/paste one of the lines below, rename it, and just change the "background" color. Don't forget to add an arrow below */
 .hummus { background: #dda93e; }
 .sesh { background: #455466 }
 .tesla { background: #e21f3b; }
 .pitt { background: #f99637; }
 .hoob { background: #6895a8; }
 .compass { background: #2ecc71; }
-.head .head-wrap { position: relative; }
+/* + + + + + End */
+
+/* + + + + + When adding another project page, copy/paste one of the lines below, rename it, and just change the "background" url. To match the others, make sure image height is 324px, width doesn't matter. */
 .hummus .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_hummus.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
 .sesh .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_sesh.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
 .tesla .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_tesla.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
 .pitt .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_pittsburgh.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
 .hoob .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_hoob.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
 .compass .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_compass.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
+/* + + + + + End */
+
 .head .head-wrap { margin:0 auto; max-width: 960px; padding: 130px 40px;}
 .head .head-wrap .details { width: 50%; }
-.head .head-wrap .details h1 { font-weight: 300; font-size: 4em; margin-bottom: 25px; padding-bottom: 25px; border-bottom: 8px solid rgba(0,0,0,.1); display: inline-block;}
+.head .head-wrap .details h1 { color: #fff; font-weight: 300; font-size: 4em; margin-bottom: 25px; padding-bottom: 25px; border-bottom: 8px solid rgba(0,0,0,.1); display: inline-block;}
 .head .head-wrap .details p { font-weight: 400; font-size: 1em; line-height: 160%;}
 .head .head-wrap .details aside { margin-top: 15px; }
 .head .head-wrap .details aside span { opacity: .5;}
 .head .head-wrap .details aside p { font-weight: 600; font-size: .8em; line-height: 180%; opacity: .6;}
 
-/* -- Down arrow on work page headers -- */
+section {}
+section.white { background:#fff; }
+section .section-wrap {margin:0 auto; max-width: 960px; padding: 100px 40px;}
+section .section-wrap.continue {margin:0 auto; max-width: 960px; padding: 0px 40px 100px;}
+section .section-wrap.center { text-align: center;}
+section .section-wrap span.left { text-align: left; max-width: 50%; display: block;}
+section .section-wrap h2 { font-size: 2em; margin-bottom: 40px; font-weight: 300; line-height: 140%}
+section .section-wrap h3 { font-size: 1.4em; margin-bottom: 20px; font-weight: 400; line-height: 140%}
+section .section-wrap p {max-width: 650px; margin:0 auto 20px; font-weight: 400; font-size: 1.1em; line-height: 170%;}
+section .section-wrap p:last-child {margin-bottom: 0;}
+
+/* - Down Arrow - */
 
 .arrow { position: relative;  border: 2px solid #; }
 .arrow:after, .arrow:before { top: 100%; left: 50%;	border: solid transparent;	content: " ";	height: 0;	width: 0;	position: absolute;	pointer-events: none;}
+.arrow:before { border-color: rgba(0, 0, 0, 0); border-top-color: #; border-width: 19px;	margin-left: -19px; }
+
+/* + + + + + When adding another project page, copy/paste one of the lines below, rename it, and just change the "border-top-color" to be the same as the background color */
 .hummus-arrow:after { border-color: rgba(69, 84, 102, 0); border-top-color: #dda93e;	border-width: 16px;	margin-left: -16px; }
 .sesh-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #455466;	border-width: 16px;	margin-left: -16px; }
 .tesla-arrow:after { border-color: rgba(69, 84, 102, 0); border-top-color: #e21f3b;	border-width: 16px;	margin-left: -16px; }
 .pitt-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #f99637;	border-width: 16px;	margin-left: -16px; }
 .hoob-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #6895a8;	border-width: 16px;	margin-left: -16px; }
 .compass-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #2ecc71;	border-width: 16px;	margin-left: -16px; }
-.arrow:before { border-color: rgba(0, 0, 0, 0); border-top-color: #; border-width: 19px;	margin-left: -19px; }
+/* + + + + + End */
 
-
-/* -------- Mobile -------- */
+/* ------------------------ MOBILE ------------------------ */
 
 @media only screen and (max-width: 515px) { 
-	header #header-wrap { padding: 30px;}
-	header #header-wrap #logo, header #header-wrap #nav { width:100%; text-align: center;}
-	header #header-wrap #nav ul li { margin: 0; padding: 20px 0 0;}
+	header #header-wrap { padding: 30px 0;}
+	header #header-wrap #logo, header #header-wrap #nav { width:100%; text-align: left;}
+	header #header-wrap #logo {margin-left: 40px; width: 47%; float: left;}
+	header #header-wrap #nav {margin-right:20px; text-align: right; width: 40%; float:right;}
+	header #header-wrap #nav ul li { margin: 0; padding: 25px 0 0;}
 	header #header-wrap #nav ul li a { padding: 20px; font-size: 1.2em;}
 
 	#grid-container { padding: 30px; }
 
 	footer ul li { font-size: 1em;}
 
-/* -------- Mobile Work Pages-------- */
+	/* ------------------------ MOBILE WORK PAGES ------------------------ */
+
 	.head .head-wrap { padding: 80px 40px;}
 	.head .head-wrap .details { width: 100%; }
 
 	.head .head-wrap .details:after {opacity:.1; background-position: center center; background-size: auto 100%; width: 100%; -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);}
 
+	section .section-wrap {padding: 80px 40px;}
+	section .section-wrap.continue {padding: 0px 40px 40px;}
+	section .section-wrap span.left { max-width: 100%;}
 
 }
+
