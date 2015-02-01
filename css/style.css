@@ -130,10 +130,11 @@ section .section-wrap p:last-child {margin-bottom: 0;}
 @media only screen and (max-width: 515px) { 
 	header #header-wrap { padding: 30px 0;}
 	header #header-wrap #logo, header #header-wrap #nav { width:100%; text-align: left;}
-	header #header-wrap #logo {margin-left: 40px; width: 47%; float: left;}
-	header #header-wrap #nav {margin-right:20px; text-align: right; width: 40%; float:right;}
+	header #header-wrap #logo {margin-left: 40px; width: 40%; float: left;}
+	header #header-wrap #logo h1 a {font-size: 2em;}
+	header #header-wrap #nav {margin-right:20px; text-align: right; width: 44%; float:right;}
 	header #header-wrap #nav ul li { margin: 0; padding: 25px 0 0;}
-	header #header-wrap #nav ul li a { padding: 20px; font-size: 1.2em;}
+	header #header-wrap #nav ul li a { padding: 20px; font-size: 1em;}
 
 	#grid-container { padding: 30px; }
 
