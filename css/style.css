@@ -83,27 +83,32 @@ ul.grid li:hover .info h1 a:after {right: 17px;}
 /* + + + + + End */
 
 /* + + + + + When adding another project page, copy/paste one of the lines below, rename it, and just change the "background" url. To match the others, make sure image height is 324px, width doesn't matter. */
-.hummus .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_hummus.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
-.sesh .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_sesh.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
-.tesla .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_tesla.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
-.pitt .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_pittsburgh.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
-.hoob .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_hoob.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
-.compass .head-wrap .details:after {content : ""; display: block; position: absolute; top: 0; left: 0; background: transparent url(../images/icon_compass.png) no-repeat right center; background-size: auto 40%; width: 95%; height: 100%; opacity : 1;}
+.hummus .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_hummus.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
+.sesh .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_sesh.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
+.tesla .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_tesla.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
+.pitt .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_pittsburgh.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
+.hoob .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_hoob.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
+.compass .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_compass.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
 /* + + + + + End */
 
 .head .head-wrap { margin:0 auto; max-width: 960px; padding: 130px 40px;}
-.head .head-wrap .details { width: 50%; }
+.head .head-wrap .details { width: 50%; z-index: 99; }
 .head .head-wrap .details h1 { color: #fff; font-weight: 300; font-size: 4em; margin-bottom: 25px; padding-bottom: 25px; border-bottom: 8px solid rgba(0,0,0,.1); display: inline-block;}
 .head .head-wrap .details p { font-weight: 400; font-size: 1em; line-height: 160%;}
+.head .head-wrap .details p a {color: #fff; text-decoration: none;}
+.head .head-wrap .details p a:hover {opacity:.5;}
 .head .head-wrap .details aside { margin-top: 15px; }
-.head .head-wrap .details aside span { opacity: .5;}
+.head .head-wrap .details aside span { opacity: .6;}
 .head .head-wrap .details aside p { font-weight: 600; font-size: .8em; line-height: 180%; opacity: .6;}
 
 section {}
 section.white { background:#fff; }
+section.same .section-wrap:first-child {padding-top: 0;}
 section .section-wrap {margin:0 auto; max-width: 960px; padding: 100px 40px;}
 section .section-wrap.continue {margin:0 auto; max-width: 960px; padding: 0px 40px 100px;}
 section .section-wrap.center { text-align: center;}
+section .section-wrap img { max-width:100%; }
+section .section-wrap img.margin-top { margin-top:30px; }
 section .section-wrap span.left { vertical-align: middle; text-align: left; max-width: 50%; display: inline-block;}
 section .section-wrap aside.right { vertical-align: middle; display: inline-block; padding-left:10%;}
 section .section-wrap h2 { font-size: 2em; margin-bottom: 40px; font-weight: 300; line-height: 140%}
@@ -148,14 +153,16 @@ section .section-wrap p strong.circle { width:50px; height: 50px; padding: 5px; 
 	.head .head-wrap { padding: 80px 40px;}
 	.head .head-wrap .details { width: 100%; }
 
-	.head .head-wrap .details:after {opacity:.1; background-position: center center; background-size: auto 100%; width: 100%; -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);}
+	.head .head-wrap .details:before {opacity:.1; margin-right: 0px; background-position: center center; background-size: auto 100%; width: 100%; -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);}
 
 	section .section-wrap {padding: 80px 40px;}
 	section .section-wrap.continue {padding: 0px 40px 40px;}
+	section .section-wrap.continue:last-child { padding: 0 40px 80px;}
 	section .section-wrap.center { text-align: left;}
 	section .section-wrap span.left { max-width: 100%;}
 	section .section-wrap p.indent { position: relative; padding-left:70px;}
 	section .section-wrap p strong.circle { position: absolute; text-align: center; left: 0;}
+	section .section-wrap aside video { margin:0 auto; width: 100%;}
 
 }
 
