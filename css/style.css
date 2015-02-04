@@ -101,18 +101,28 @@ ul.grid li:hover .info h1 a:after {right: 17px;}
 .head .head-wrap .details aside span { opacity: .7;}
 .head .head-wrap .details aside p { font-weight: 600; font-size: .8em; line-height: 180%; opacity: .7;}
 
-section {}
+/* + + + + + Add .white to a <section> to have a white background */
 section.white { background:#fff; }
+/* + + + + + Add .same to a <section> if the previous <section> has the same background color */
 section.same .section-wrap:first-child {padding-top: 0;}
-section .section-wrap {margin:0 auto; max-width: 960px; padding: 100px 40px;}
+section .section-wrap {margin:0 auto; max-width: 960px; padding: 100px 40px; text-align: center;}
+/* + + + + + Add .continue to .section-wrap if you have multiple .section-wraps in a <section> */
 section .section-wrap.continue {margin:0 auto; max-width: 960px; padding: 0px 40px 100px;}
-section .section-wrap.center { text-align: center;}
+/* + + + + + Add to .section-wrap if you want text left aligned */
+section .section-wrap.left { text-align: left;}
 section .section-wrap img { max-width:100%; }
+/* + + + + + Add to images or to anythign you need more spacing above */
 section .section-wrap img.margin-top { margin-top:30px; }
-section .section-wrap span.left { vertical-align: middle; text-align: left; max-width: 50%; display: inline-block;}
-section .section-wrap aside.right { vertical-align: middle; display: inline-block; padding-left:10%;}
-section .section-wrap h2 { font-size: 2em; margin-bottom: 40px; font-weight: 300; line-height: 140%}
-section .section-wrap h3 { font-size: 1.4em; margin-bottom: 20px; font-weight: 400; line-height: 140%}
+/* + + + + + When you want 2 columns: left+right/copy+image,vid use span + aside html. Add the class leftside and rightside to each accordingly */
+section .section-wrap span.leftside { vertical-align: middle; text-align: left; max-width: 50%; display: inline-block;}
+section .section-wrap span.rightside { vertical-align: middle; text-align: left; max-width: 50%; display: inline-block;}
+section .section-wrap aside.leftside { vertical-align: middle; display: inline-block; padding-right:10%; max-width: 49%;}
+section .section-wrap aside.rightside { vertical-align: middle; display: inline-block; padding-left:10%; max-width: 49%;}
+/* + + + + + End */
+
+section .section-wrap aside img { width: 100%;}
+section .section-wrap h2 { max-width: 650px; font-size: 2em; margin:0 auto 40px; font-weight: 300; line-height: 140%;}
+section .section-wrap h3 { max-width: 650px; font-size: 1.4em; margin:0 auto 20px; font-weight: 400; line-height: 140%;}
 section .section-wrap p {max-width: 650px; margin:0 auto 20px; font-weight: 400; font-size: 1.1em; line-height: 170%;}
 section .section-wrap p:last-child {margin-bottom: 0;}
 section .section-wrap p strong.circle { width:50px; height: 50px; padding: 5px; display: block; margin: 0 auto 20px; vertical-align: middle; -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; border: 3px solid #eee; color:#bac2cb; line-height: 1.8; }
@@ -157,10 +167,9 @@ section .section-wrap p strong.circle { width:50px; height: 50px; padding: 5px; 
 
 	.head .head-wrap .details:before {opacity:.1; margin-right: 0px; background-position: center center; background-size: auto 100%; width: 100%; -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);}
 
-	section .section-wrap {padding: 80px 40px;}
+	section .section-wrap {padding: 80px 40px; text-align: left;}
 	section .section-wrap.continue {padding: 0px 40px 40px;}
 	section .section-wrap.continue:last-child { padding: 0 40px 80px;}
-	section .section-wrap.center { text-align: left;}
 	section .section-wrap span.left { max-width: 100%;}
 	section .section-wrap p.indent { position: relative; padding-left:70px;}
 	section .section-wrap p strong.circle { position: absolute; text-align: center; left: 0;}
@@ -169,8 +178,10 @@ section .section-wrap p strong.circle { width:50px; height: 50px; padding: 5px; 
 }
 
 @media only screen and (max-width: 881px) { 
-	section .section-wrap span.left { max-width: 100%;}
-	section .section-wrap aside.right { padding-left:0;}
+	section .section-wrap span.leftside { max-width: 100%; display:block;}
+	section .section-wrap aside.rightside { padding-left:0; max-width: 100%; display:block;}
+	section .section-wrap aside.leftside {max-width: 100%; display:block;}
+	section .section-wrap aside.rightside img {margin: 30px auto 0; display:block;}
 }
 
 
