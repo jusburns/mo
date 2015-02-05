@@ -162,7 +162,7 @@ section .section-wrap.sesh-last img { max-width:280px; width: 100%; margin: 5px;
 /* ------------------------ LIVELY PITTSBURGH SPECIFIC ------------------------ */
 
 div.cycle-slideshow img { box-shadow: 0 2px 4px rgba(0,0,0,.2);}
-a#prev, a#next{ margin:30px; font-size: 1.5em;}
+a#prev, a#next{ margin:30px; font-size: 1.5em; display: inline-block;}
 
 /* ------------------------ MOBILE ------------------------ */
 
@@ -207,7 +207,7 @@ section .section-wrap.sesh-last img { max-width:100%;}
 	section .section-wrap aside.rightside { padding-left:0; max-width: 100%; display:block;}
 	section .section-wrap aside.leftside {max-width: 100%; display:block; padding: 0;}
 	section .section-wrap aside.rightside img {margin: 30px auto 0; display:block;}
-	section .section-wrap .two-up { width: 100%; margin: 10px;}
+	section .section-wrap .two-up { width: 100%; margin: 10px 0;}
 }
 
 
