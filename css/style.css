@@ -37,9 +37,10 @@ header #header-wrap #logo, header #header-wrap #nav { width:49%; vertical-align:
 
 #grid-container { margin: 0 auto; max-width: 960px; padding: 80px 30px 0px; clear: both; }
 
-footer { margin:0 auto; max-width: 960px; padding: 40px; overflow: hidden;}
+footer { margin:0 auto; max-width: 960px; padding: 40px; overflow: hidden; position: relative;}
 footer ul li { display: inline-block; margin-right:20px; font-size:.8em; color:#d4d3d3; line-height: 24px;}
 footer ul li:last-child {clear: both; display: block;}
+footer .back-to-top { position: absolute; right: 40px; top: 44px; font-size: .8em;}
 
 /* ------------------------ HOMEPAGE ------------------------ */
 
@@ -67,6 +68,7 @@ ul.grid li .info { text-align: left; }
 ul.grid li .info h1 a { font-size: 1em; font-weight: 600; line-height: 1.2; padding: 15px 20px 13px; display: block; }
 ul.grid li .info h1 a:after {content: "\203A"; position: absolute; right: 20px; font-size:1.2em; line-height:.9em; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
 ul.grid li:hover .info h1 a:after {right: 17px;}
+
 
 /* ------------------------ WORK PAGES ------------------------ */
 
@@ -178,7 +180,7 @@ a#prev, a#next{ margin:30px; font-size: 1.5em; display: inline-block;}
 
 	#grid-container { padding: 30px; }
 
-	footer ul li { font-size: 1em;}
+	footer ul li, footer .back-to-top { font-size: 1em;}
 
 	/* ------------------------ MOBILE WORK PAGES ------------------------ */
 
