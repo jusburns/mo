@@ -103,6 +103,7 @@ ul.grid li:hover .info h1 a:after {right: 17px;}
 
 /* + + + + + Add .white to a <section> to have a white background */
 section.white { background:#fff; }
+section.gray { background-color: #515252;}
 /* + + + + + Add .same to a <section> if the previous <section> has the same background color */
 section.same .section-wrap:first-child {padding-top: 0;}
 section .section-wrap {margin:0 auto; max-width: 960px; padding: 100px 40px; text-align: center;}
@@ -127,6 +128,10 @@ section .section-wrap p {max-width: 650px; margin:0 auto 20px; font-weight: 400;
 section .section-wrap p:last-child {margin-bottom: 0;}
 section .section-wrap p strong.circle { width:50px; height: 50px; padding: 5px; display: block; margin: 0 auto 20px; vertical-align: middle; -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; border: 3px solid #eee; color:#bac2cb; line-height: 1.8; }
 section .section-wrap .margin { margin: 15px;}
+section.gray .section-wrap h1, section.gray .section-wrap h2, section.gray .section-wrap p  { color: #fff;}
+section.gray .section-wrap p  { opacity: .7;}
+section .section-wrap .two-up { width: 375px; margin: 10px; display: inline-block; vertical-align: top;}
+section .section-wrap .two-up p { font-size: 1em;}
 
 /* - Down Arrow - */
 
@@ -143,6 +148,9 @@ section .section-wrap .margin { margin: 15px;}
 .compass-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #2ecc71;	border-width: 16px;	margin-left: -16px; }
 /* + + + + + End */
 
+/* ------------------------ SESH SPECIFIC ------------------------ */
+section .section-wrap.sesh-last img { max-width:280px; width: 100%; margin: 5px; box-shadow: 0 2px 4px rgba(0,0,0,.2);}
+
 /* ------------------------ TESLA SPECIFIC ------------------------ */
 .tesla-specific section .section-wrap span { position: relative; display: inline-block; }
 .tesla-specific section .section-wrap img { max-width: 800px; width:100%;}
@@ -150,6 +158,11 @@ section .section-wrap .margin { margin: 15px;}
 .tesla-specific section .section-wrap span.small img { max-width: 390px;}
 .tesla-specific section .section-wrap aside.tag { background-color:#e21f3b; color: #fff; padding: 10px 15px; display: inline-block; position: absolute; top:0px; left:0px; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
 .tesla-specific section .section-wrap:hover aside.tag { top:-10px; left:-10px; box-shadow: 4px 4px 0px rgba(0,0,0,.2);}
+
+/* ------------------------ LIVELY PITTSBURGH SPECIFIC ------------------------ */
+
+div.cycle-slideshow img { box-shadow: 0 2px 4px rgba(0,0,0,.2);}
+a#prev, a#next{ margin:0 60px; font-size: 1.5em;}
 
 /* ------------------------ MOBILE ------------------------ */
 
@@ -183,13 +196,18 @@ section .section-wrap .margin { margin: 15px;}
 	section .section-wrap p strong.circle { position: absolute; text-align: center; left: 0;}
 	section .section-wrap aside video { margin:0 auto; width: 100%;}
 
+	/* ------------------------ MOBILE SESH SPECIFIC ------------------------ */
+section .section-wrap.sesh-last img { max-width:100%;}
+
 }
 
 @media only screen and (max-width: 881px) { 
 	section .section-wrap span.leftside { max-width: 100%; display:block;}
+	section .section-wrap span.rightside { max-width: 100%; display:block; margin-top:20px;}
 	section .section-wrap aside.rightside { padding-left:0; max-width: 100%; display:block;}
-	section .section-wrap aside.leftside {max-width: 100%; display:block;}
+	section .section-wrap aside.leftside {max-width: 100%; display:block; padding: 0;}
 	section .section-wrap aside.rightside img {margin: 30px auto 0; display:block;}
+	section .section-wrap .two-up { width: 100%; margin: 10px;}
 }
 
 
