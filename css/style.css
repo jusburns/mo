@@ -126,7 +126,7 @@ section .section-wrap h3 { max-width: 650px; font-size: 1.4em; margin:0 auto 20p
 section .section-wrap p {max-width: 650px; margin:0 auto 20px; font-weight: 400; font-size: 1.1em; line-height: 170%;}
 section .section-wrap p:last-child {margin-bottom: 0;}
 section .section-wrap p strong.circle { width:50px; height: 50px; padding: 5px; display: block; margin: 0 auto 20px; vertical-align: middle; -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; border: 3px solid #eee; color:#bac2cb; line-height: 1.8; }
-
+section .section-wrap .margin { margin: 15px;}
 
 /* - Down Arrow - */
 
@@ -142,6 +142,14 @@ section .section-wrap p strong.circle { width:50px; height: 50px; padding: 5px; 
 .hoob-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #6895a8;	border-width: 16px;	margin-left: -16px; }
 .compass-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #2ecc71;	border-width: 16px;	margin-left: -16px; }
 /* + + + + + End */
+
+/* ------------------------ TESLA SPECIFIC ------------------------ */
+.tesla-specific section .section-wrap span { position: relative; display: inline-block; }
+.tesla-specific section .section-wrap img { max-width: 800px; width:100%;}
+.tesla-specific section .section-wrap span.small {margin: 10px;}
+.tesla-specific section .section-wrap span.small img { max-width: 390px;}
+.tesla-specific section .section-wrap aside.tag { background-color:#e21f3b; color: #fff; padding: 10px 15px; display: inline-block; position: absolute; top:0px; left:0px; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
+.tesla-specific section .section-wrap:hover aside.tag { top:-10px; left:-10px; box-shadow: 4px 4px 0px rgba(0,0,0,.2);}
 
 /* ------------------------ MOBILE ------------------------ */
 
