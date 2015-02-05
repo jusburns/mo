@@ -162,6 +162,7 @@ section .section-wrap.sesh-last img { max-width:280px; width: 100%; margin: 5px;
 /* ------------------------ LIVELY PITTSBURGH SPECIFIC ------------------------ */
 
 div.cycle-slideshow img { box-shadow: 0 2px 4px rgba(0,0,0,.2);}
+div.cycle-slideshow {text-align: center;}
 a#prev, a#next{ margin:30px; font-size: 1.5em; display: inline-block;}
 
 /* ------------------------ MOBILE ------------------------ */
