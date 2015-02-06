@@ -152,6 +152,11 @@ section .section-wrap .two-up p { font-size: 1em;}
 
 /* ------------------------ SESH SPECIFIC ------------------------ */
 section .section-wrap.sesh-last img { max-width:280px; width: 100%; margin: 5px; box-shadow: 0 2px 4px rgba(0,0,0,.2);}
+section .section-wrap ul#sesh-bullets { margin-bottom:20px;}
+section .section-wrap ul#sesh-bullets li { padding: 20px 0 20px 60px; min-height: 40px; }
+section .section-wrap ul#sesh-bullets li.empty { background: transparent url(../images/sesh/empty.png) no-repeat center left; background-size: auto 40px;; }
+section .section-wrap ul#sesh-bullets li.low { background:  transparent url(../images/sesh/low.png) no-repeat center left; background-size: auto 40px;;}
+section .section-wrap ul#sesh-bullets li.full { background: transparent url(../images/sesh/full.png) no-repeat center left; background-size: auto 40px;}
 
 /* ------------------------ TESLA SPECIFIC ------------------------ */
 .tesla-specific section .section-wrap span { position: relative; display: inline-block; }
