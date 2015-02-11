@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	<title>Mo Abid | UX Designer - Hoob</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+</head>
+<body class="hoob-specific">
+	<header>
+		<div id="header-wrap">
+			<div id="logo">
+				<h1><a href="index.html">Mo Abid</a></h1>
+				<h2>UX Designer</h2>
+			</div>
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Work</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="head hoob hoob-arrow arrow">
+		<div class="head-wrap">
+			<div class="details">
+				<h1>Hoob</h1>
+				<p>A dating app that focuses on personality first, looks second. People are matched like Tinder, but the photos are blurred. As you message someone more, their photos slowly start to un-blur.</p>
+				<aside>
+					<p><span>Project Type:</span> Responsive Website</p>
+					<p><span>Role:</span> Founder &amp; Lead Designer</p>
+				</aside>
+			</div>
+		</div>
+	</div>
+	<section class="white">
+		<div class="section-wrap">
+			<h2>Understanding the Dating Space</h2>
+			<p>I conducted various user research activities with 4 men and 4 women.</p>
+			<img src="images/hoob/research.png">
+		</div>
+	</section>
+	<section>
+		<div class="section-wrap">
+			<h2>Competition is For Losers</h2>
+			<p>Peter Theil says "Competition is for losers," and for the most part, I agree. When conducting competitive analysis, I followed a popular consulting practice called The Blue Ocean Stragey. The methodology is intended for listing out a company's competitors, their advantages, and how much users value those advantages with the goal of finding an area for that company to attack.</p>
+			<img src="images/hoob/wire.png">
+		</div>
+	</section>
+	<section class="white">
+		<div class="section-wrap">
+			<h2>Four Key Insights</h2>
+			<p>From my user research and blue ocean strategy competitive analysis, I synthesized my notes into four key insights written from a user's perspective.</p>
+			<p class="indent"><strong class="circle">1</strong>I want to strike up conversations with others I find interesting but I'm unable to get the time of day because I'm judged by my photos. At the very least, I want to be friends and ask them about the interesting things on their profile!</p>
+			<p class="indent"><strong class="circle">2</strong>I want to know who I'm chatting with is real, but I also don't want them to be able to figure out exactly who I am before I share that information with them.</p>
+			<p class="indent"><strong class="circle">3</strong>I want to understand the type of relationship the other person waht's to be in right off the bat.</p>
+			<p class="indent"><strong class="circle">4</strong>My dating site experience shouldn't be a chore or a task. Working hard to find matches, respond to messages, and sort through profiles is something that I'd prefer to be as easy as possible.</p>
+		</div>
+	</section>
+	<section>
+		<div class="section-wrap">
+			<h2>Wireframes</h2>
+			<img src="images/hoob/wireframes.png">
+		</div>
+	</section>
+	<section class="white">
+		<div class="section-wrap">
+			<h2>Your Potentials</h2>
+			<p>Users read the profiles that are shown and either express interest or pass on a particular person. If both people express interest in one another, the photos become slightly less blurry and they now have the ability to message one another.</p>
+			<video autoplay loop>
+				<source src="videos/Hoob_Potentials.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+	</section>
+	<section>
+		<div class="section-wrap">
+			<h2>Photos Gradually Reveal</h2>
+			<p>As users message one another, they learn about each other and their photos slowly start to un-blur. Photos un-blur only after messages have been reciprocated.</p>
+			<video autoplay loop>
+				<source src="videos/Hoob_Messages.mov" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+	</section>
+	<section class="white">
+		<div class="section-wrap">
+			<h2>Key Screens</h2>
+			<div class="cycle-slideshow" data-cycle-pause-on-hover="true" data-cycle-speed="200" data-cycle-fx="scrollHorz"  data-cycle-prev="#prev" data-cycle-next="#next">
+				<img src="images/hoob/4.png">
+				<img src="images/hoob/1.png">
+				<img src="images/hoob/2.png">
+				<img src="images/hoob/3.png">
+				<div class="center">
+				    <a href="#" id="prev">&#9664;</a> 
+				    <a href="#" id="next">&#9654;</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+			<div id="meta">
+				<ul>
+					<li><strong>SAY HELLO<strong></li>
+					<li><a href="mailto:mohammedabid44@gmail.com">Email</a></li>
+					<li>Copyright &copy; 2014 Mo Abid. All Rights Reserved.</li>
+				</ul>
+				<a href="#" class="back-to-top">Back to Top</a>
+			</div>
+	</footer>
+	<script>
+		jQuery(document).ready(function() {
+		    var offset = 220;
+		    var duration = 500;
+		    jQuery(window).scroll(function() {
+		        if (jQuery(this).scrollTop() > offset) {
+		            jQuery('.back-to-top').fadeIn(duration);
+		        } else {
+		            jQuery('.back-to-top').fadeOut(duration);
+		        }
+		    });
+		    
+		    jQuery('.back-to-top').click(function(event) {
+		        event.preventDefault();
+		        jQuery('html, body').animate({scrollTop: 0}, duration);
+		        return false;
+		    })
+		});
+	</script>
+</body>
+</html>
