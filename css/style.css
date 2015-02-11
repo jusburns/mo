@@ -200,7 +200,7 @@ a#prev, a#next{ margin:30px; font-size: 1.5em; display: inline-block;}
 
 	footer ul li, footer .back-to-top { font-size: 1em;}
 
-	a.btn {display: block; text-align: center;}
+	a.btn, a.small-btn {display: block; text-align: center; font-size: 1.1em;}
 
 	/* ------------------------ MOBILE WORK PAGES ------------------------ */
 
