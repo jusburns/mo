@@ -63,11 +63,16 @@ ul.grid li .img .img-wrap .overlay a { color: #fff; padding: 0; bottom: 0; heigh
 ul.grid li .img .img-wrap .overlay.mobile { background: #26a9e7 url(../images/mobile.svg) no-repeat center center; background-size: auto 25%;}
 ul.grid li .img .img-wrap .overlay.desktop { background: #26a9e7 url(../images/desktop.svg) no-repeat center center; background-size: auto 25%;}
 ul.grid li .img .img-wrap .overlay.mobtop { background: #26a9e7 url(../images/mobtop.svg) no-repeat center center; background-size: auto 25%;}
+ul.grid li .img .img-wrap .overlay.book { background: #26a9e7 url(../images/book.svg) no-repeat center center; background-size: auto 25%;}
 ul.grid li:hover .img .img-wrap .overlay { opacity: 1; }
 ul.grid li .info { text-align: left; }
 ul.grid li .info h1 a { font-size: 1em; font-weight: 600; line-height: 1.2; padding: 15px 20px 13px; display: block; }
 ul.grid li .info h1 a:after {content: "\203A"; position: absolute; right: 20px; font-size:1.2em; line-height:.9em; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
 ul.grid li:hover .info h1 a:after {right: 17px;}
+
+a.btn { display:inline-block; padding:24px 50px; border:2px solid #96abb5; font-size: 1.5em; border-radius: 8px; margin: 15px 0 0;}
+a.small-btn { display:inline-block; padding:15px 30px; border:2px solid #96abb5; font-size: 1em; border-radius: 8px; margin: 15px 0 0;}
+a.btn:hover, a.small-btn:hover { border-color:#26a9e7;}
 
 
 /* ------------------------ WORK PAGES ------------------------ */
@@ -82,6 +87,7 @@ ul.grid li:hover .info h1 a:after {right: 17px;}
 .pitt { background: #f99637; }
 .hoob { background: #6895a8; }
 .compass { background: #2ecc71; }
+.apple { background: #9ec632; }
 /* + + + + + End */
 
 /* + + + + + When adding another project page, copy/paste one of the lines below, rename it, and just change the "background" url. To match the others, make sure image height is 324px, width doesn't matter. */
@@ -91,6 +97,7 @@ ul.grid li:hover .info h1 a:after {right: 17px;}
 .pitt .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_pittsburgh.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
 .hoob .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_hoob.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
 .compass .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_compass.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
+.apple .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_apple.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
 /* + + + + + End */
 
 .head .head-wrap { margin:0 auto; max-width: 960px; padding: 130px 40px;}
@@ -172,6 +179,12 @@ div.cycle-slideshow img { box-shadow: 0 2px 4px rgba(0,0,0,.2);}
 div.cycle-slideshow {text-align: center;}
 a#prev, a#next{ margin:30px; font-size: 1.5em; display: inline-block;}
 
+/* ------------------------ HOOB SPECIFIC ------------------------ */
+.hoob-specific section .section-wrap video { box-shadow: 0 2px 5px rgba(0,0,0,.4); width:100%; }
+
+/* ------------------------ APPLE SPECIFIC ------------------------ */
+.apple-specific section .section-wrap img { margin:0 0 20px; }
+
 /* ------------------------ MOBILE ------------------------ */
 
 @media only screen and (max-width: 515px) { 
@@ -186,6 +199,8 @@ a#prev, a#next{ margin:30px; font-size: 1.5em; display: inline-block;}
 	#grid-container { padding: 30px; }
 
 	footer ul li, footer .back-to-top { font-size: 1em;}
+
+	a.btn {display: block; text-align: center;}
 
 	/* ------------------------ MOBILE WORK PAGES ------------------------ */
 
