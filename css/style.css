@@ -73,6 +73,7 @@ ul.grid li:hover .info h1 a:after {right: 17px;}
 a.btn { display:inline-block; padding:24px 50px; border:2px solid #96abb5; font-size: 1.5em; border-radius: 8px; margin: 15px 0 0;}
 a.small-btn { display:inline-block; padding:15px 30px; border:2px solid #96abb5; font-size: 1em; border-radius: 8px; margin: 15px 0 0;}
 a.btn:hover, a.small-btn:hover { border-color:#26a9e7;}
+a.space {margin:20px;}
 
 
 /* ------------------------ WORK PAGES ------------------------ */
@@ -88,6 +89,7 @@ a.btn:hover, a.small-btn:hover { border-color:#26a9e7;}
 .hoob { background: #6895a8; }
 .compass { background: #2ecc71; }
 .apple { background: #9ec632; }
+.mgp { background: #f26522; }
 /* + + + + + End */
 
 /* + + + + + When adding another project page, copy/paste one of the lines below, rename it, and just change the "background" url. To match the others, make sure image height is 324px, width doesn't matter. */
@@ -98,6 +100,7 @@ a.btn:hover, a.small-btn:hover { border-color:#26a9e7;}
 .hoob .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_hoob.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
 .compass .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_compass.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
 .apple .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_apple.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
+.mgp .head-wrap .details:before {content : ""; display: block; position: absolute; margin-right: 40px; top: 0; right: 0; background: transparent url(../images/icon_mgp.png) no-repeat right center; background-size: auto 40%; width: 50%; height: 100%; opacity : 1; z-index: 0;}
 /* + + + + + End */
 
 .head .head-wrap { margin:0 auto; max-width: 960px; padding: 130px 40px;}
@@ -110,25 +113,25 @@ a.btn:hover, a.small-btn:hover { border-color:#26a9e7;}
 .head .head-wrap .details aside span { opacity: .7;}
 .head .head-wrap .details aside p { font-weight: 600; font-size: .8em; line-height: 180%; opacity: .7;}
 
-/* + + + + + Add .white to a <section> to have a white background */
+/* = = = Add .white to a <section> to have a white background */
 section.white { background:#fff; }
 section.gray { background-color: #515252;}
-/* + + + + + Add .same to a <section> if the previous <section> has the same background color */
+/* = = = Add .same to a <section> if the previous <section> has the same background color */
 section.same .section-wrap:first-child {padding-top: 0;}
 section .section-wrap {margin:0 auto; max-width: 960px; padding: 100px 40px; text-align: center;}
-/* + + + + + Add .continue to .section-wrap if you have multiple .section-wraps in a <section> */
+/* = = = Add .continue to .section-wrap if you have multiple .section-wraps in a <section> */
 section .section-wrap.continue {margin:0 auto; max-width: 960px; padding: 0px 40px 100px;}
-/* + + + + + Add to .section-wrap if you want text left aligned */
+/* = = = Add to .section-wrap if you want text left aligned */
 section .section-wrap.left { text-align: left;}
 section .section-wrap img { max-width:100%; }
-/* + + + + + Add to images or to anythign you need more spacing above */
+/* = = = Add to images or to anythign you need more spacing above */
 section .section-wrap img.margin-top { margin-top:30px; }
-/* + + + + + When you want 2 columns: left+right/copy+image,vid use span + aside html. Add the class leftside and rightside to each accordingly */
+/* = = = When you want 2 columns: left+right/copy+image,vid use span + aside html. Add the class leftside and rightside to each accordingly */
 section .section-wrap span.leftside { vertical-align: middle; text-align: left; max-width: 50%; display: inline-block;}
 section .section-wrap span.rightside { vertical-align: middle; text-align: left; max-width: 50%; display: inline-block;}
 section .section-wrap aside.leftside { vertical-align: middle; display: inline-block; padding-right:10%; max-width: 49%;}
 section .section-wrap aside.rightside { vertical-align: middle; display: inline-block; padding-left:10%; max-width: 49%;}
-/* + + + + + End */
+/* = = = End */
 
 section .section-wrap aside img { width: 100%;}
 section .section-wrap h2 { max-width: 650px; font-size: 2em; margin:0 auto 40px; font-weight: 300; line-height: 140%;}
@@ -155,6 +158,7 @@ section .section-wrap .two-up p { font-size: 1em;}
 .pitt-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #f99637;	border-width: 16px;	margin-left: -16px; }
 .hoob-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #6895a8;	border-width: 16px;	margin-left: -16px; }
 .compass-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #2ecc71;	border-width: 16px;	margin-left: -16px; }
+.mgp-arrow:after {	border-color: rgba(69, 84, 102, 0);	border-top-color: #f26522;	border-width: 16px;	margin-left: -16px; }
 /* + + + + + End */
 
 /* ------------------------ SESH SPECIFIC ------------------------ */
@@ -185,6 +189,9 @@ a#prev, a#next{ margin:30px; font-size: 1.5em; display: inline-block;}
 /* ------------------------ APPLE SPECIFIC ------------------------ */
 .apple-specific section .section-wrap img { margin:0 0 20px; }
 
+/* ------------------------ MGP SPECIFIC ------------------------ */
+.mgp-specific section .section-wrap img.four { width:23%; }
+
 /* ------------------------ MOBILE ------------------------ */
 
 @media only screen and (max-width: 515px) { 
@@ -201,6 +208,7 @@ a#prev, a#next{ margin:30px; font-size: 1.5em; display: inline-block;}
 	footer ul li, footer .back-to-top { font-size: 1em;}
 
 	a.btn, a.small-btn {display: block; text-align: center; font-size: 1.1em;}
+	a.space {margin: 20px 0;}
 
 	/* ------------------------ MOBILE WORK PAGES ------------------------ */
 
@@ -220,7 +228,10 @@ a#prev, a#next{ margin:30px; font-size: 1.5em; display: inline-block;}
 	section .section-wrap aside video { margin:0 auto; width: 100%;}
 
 	/* ------------------------ MOBILE SESH SPECIFIC ------------------------ */
-section .section-wrap.sesh-last img { max-width:100%;}
+	section .section-wrap.sesh-last img { max-width:100%;}
+
+	/* ------------------------ MGP SPECIFIC ------------------------ */
+	.mgp-specific section .section-wrap img.four { width:100%; }
 
 }
 
